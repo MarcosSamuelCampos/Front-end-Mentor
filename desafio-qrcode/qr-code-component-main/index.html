@@ -10,19 +10,67 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin:0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+     
+    
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+      body{
+        font-family:'Outfit',sans-serif;
+        font-size: 15px;
+      }
+    
+      .background{
+          background-color:hsl(212, 45%, 89%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100vh;
+          
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+        padding: 20px;
+        border-radius: 20px;
+        width: 300px;
+      }
+      .img{
+        border-radius: 20px;
+        width: 100%; /* vai ajustar a imagem dentro do container */
+      }
+      .conteudo{
+       text-align: center;
+      }
+       
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   
-  <div class="attribution">
+      <div class="background">
+        <main class="container">
+          <section>
+            <img src="/desafio-qrcode/qr-code-component-main/images/image-qr-code.png" alt="" class="img">
+          </section>
+
+          <section class="conteudo">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </section>
+        </main>
+      </div>
+
+
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#"></a>.
+  </div> -->
 </body>
 </html>
